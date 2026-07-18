@@ -126,11 +126,14 @@
   .qr:active{transform:translateY(-1px) scale(.99)}
 
   .hint{
-    font-size:clamp(10px,1.4vh,12px);letter-spacing:.04em;color:rgba(255,255,255,.35);
-    display:flex;align-items:center;gap:6px;
+    font-size:clamp(15px,2.1vh,19px);font-weight:600;letter-spacing:.01em;
+    color:var(--accent-a);text-decoration:none;
+    display:inline-flex;align-items:center;gap:7px;
     animation:rise .7s .3s both;
+    transition:color .18s ease,opacity .18s ease;
   }
-  .hint svg{width:14px;height:14px;opacity:.7}
+  .hint:hover,.hint:focus-visible{color:var(--accent-c)}
+  .hint svg{width:15px;height:15px;opacity:.85;flex:none}
 
   /* lightbox */
   .lightbox{
@@ -188,10 +191,10 @@
       </button>
     </div>
 
-    <p class="hint">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8V5a2 2 0 0 1 2-2h3M21 8V5a2 2 0 0 0-2-2h-3M3 16v3a2 2 0 0 0 2 2h3M21 16v3a2 2 0 0 1-2 2h-3"/></svg>
-      Point your camera at a code — or tap to enlarge
-    </p>
+    <a class="hint" href="https://ovoloshynivskyi.me/" target="_blank" rel="noopener">
+      ovoloshynivskyi.me
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 17 17 7M9 7h8v8"/></svg>
+    </a>
   </main>
 
   <div class="lightbox" id="lightbox" onclick="closeZoom()">
