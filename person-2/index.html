@@ -24,7 +24,7 @@
     --accent-c:#22d3ee;
     --tile:#000;
     --border:rgba(255,255,255,.09);
-    --gap:clamp(14px, 3.2vh, 28px);
+    --gap:clamp(11px, 2.4vh, 22px);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
@@ -39,7 +39,7 @@
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    padding:max(20px,env(safe-area-inset-top)) 20px max(20px,env(safe-area-inset-bottom));
+    padding:max(16px,env(safe-area-inset-top)) 14px max(16px,env(safe-area-inset-bottom));
     overflow:hidden;
     position:relative;
   }
@@ -53,7 +53,7 @@
 
   .card{
     position:relative;z-index:1;
-    width:100%;max-width:420px;
+    width:100%;max-width:460px;
     display:flex;flex-direction:column;align-items:center;
     gap:var(--gap);
     text-align:center;
@@ -61,7 +61,7 @@
 
   .avatar{
     position:relative;
-    width:clamp(96px,20vh,148px);aspect-ratio:1;border-radius:50%;
+    width:clamp(72px,13vh,116px);height:clamp(72px,13vh,116px);border-radius:50%;
     padding:3px;
     background:linear-gradient(135deg,var(--accent-a),var(--accent-b),var(--accent-c));
     box-shadow:0 0 0 6px rgba(124,92,255,.10),0 18px 45px rgba(0,0,0,.55);
@@ -78,7 +78,7 @@
     color:rgba(255,255,255,.85);
     background:radial-gradient(circle at 30% 25%,#2a2a3d,#101018);
   }
-  .avatar img{position:relative;z-index:1}
+  .avatar img{position:relative;z-index:1;object-position:center 28%}
   .avatar img.missing{display:none}
 
   .name{
@@ -102,7 +102,7 @@
   .qr-row{
     width:100%;
     display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:clamp(12px,2.4vh,18px);
+    gap:clamp(9px,1.8vh,15px);
     animation:rise .7s .26s both;
   }
   .qr{
@@ -145,6 +145,9 @@
     background:rgba(255,255,255,.06);color:#fff;font-size:22px;line-height:1;cursor:pointer;
   }
 
+  @media (max-width:430px){
+    body{padding-left:12px;padding-right:12px}
+  }
   @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
   @keyframes fade{from{opacity:0}to{opacity:1}}
   @media (prefers-reduced-motion:reduce){*{animation:none!important}}
