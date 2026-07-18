@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#07070c">
+<title>Say hi 👋</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:#07070c;color:#f6f6f9;
+    font-family:ui-sans-serif,-apple-system,"SF Pro Display","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:28px;padding:24px;overflow:hidden;position:relative;text-align:center;
+  }
+  body::before{content:"";position:fixed;width:70vmax;height:70vmax;top:-30vmax;left:50%;transform:translateX(-50%);
+    border-radius:50%;filter:blur(80px);background:radial-gradient(circle,rgba(124,92,255,.22),transparent 70%);pointer-events:none;}
+  h1{position:relative;font-size:clamp(20px,5vw,28px);font-weight:700;letter-spacing:-.02em}
+  .sub{position:relative;color:#9a9aa6;font-size:14px;margin-top:-14px}
+  .links{position:relative;display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+  a{
+    display:block;padding:18px 26px;border-radius:16px;text-decoration:none;color:#fff;
+    border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);
+    font-weight:600;min-width:160px;transition:.18s;
+  }
+  a:hover{transform:translateY(-3px);border-color:rgba(124,92,255,.6);box-shadow:0 14px 34px rgba(124,92,255,.25)}
+  a span{display:block;font-weight:400;font-size:12px;color:#9a9aa6;margin-top:4px}
+</style>
+</head>
+<body>
+  <h1>Which card?</h1>
+  <p class="sub">Quick navigation for the conference</p>
+  <div class="links">
+    <a href="person-1/">Person 1 <span>Portfolio + CV · 3 codes</span></a>
+    <a href="person-2/">Person 2 <span>CV only · 2 codes</span></a>
+  </div>
+</body>
+</html>
