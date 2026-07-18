@@ -12,7 +12,7 @@
   3. QR images already in place: Open CV / LinkedIn / Portfolio.
   ============================================================
 -->
-<title>Your Name — Say hi 👋</title>
+<title>Oleksandr Voloshynivskyi — Say hi 👋</title>
 <style>
   :root{
     --bg:#07070c;
@@ -26,7 +26,7 @@
     --gap:clamp(11px, 2.4vh, 22px);
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html,body{height:100%}
+  html{height:100%}
   body{
     background:var(--bg);
     color:var(--text);
@@ -39,7 +39,7 @@
     align-items:center;
     justify-content:center;
     padding:max(16px,env(safe-area-inset-top)) 14px max(16px,env(safe-area-inset-bottom));
-    overflow:hidden;
+    overflow-x:hidden;
     position:relative;
   }
   /* ambient glows */
@@ -62,7 +62,7 @@
   /* avatar */
   .avatar{
     position:relative;
-    width:clamp(72px,13vh,116px);height:clamp(72px,13vh,116px);border-radius:50%;
+    width:clamp(84px,15.5vh,132px);height:clamp(84px,15.5vh,132px);border-radius:50%;
     padding:3px;
     background:linear-gradient(135deg,var(--accent-a),var(--accent-b),var(--accent-c));
     box-shadow:0 0 0 6px rgba(124,92,255,.10),0 18px 45px rgba(0,0,0,.55);
@@ -162,18 +162,18 @@
   <main class="card">
     <div class="avatar">
       <!-- EDIT: replace assets/photo.jpg with your square photo -->
-      <span class="fallback">YN</span>
+      <span class="fallback">OV</span>
       <img src="assets/photo.jpg" alt="Photo" onerror="this.classList.add('missing')">
     </div>
 
     <div>
       <!-- EDIT: name / role -->
-      <h1 class="name">Your Name</h1>
-      <p class="role">Product Designer</p>
+      <h1 class="name">Oleksandr Voloshynivskyi</h1>
+      <p class="role">Frontend developer</p>
     </div>
 
     <!-- EDIT: two lines about yourself -->
-    <p class="bio">Designing clean, human-centered products.<br>Scan a code for my CV, portfolio or LinkedIn.</p>
+    <p class="bio">Frontend developer building fast, polished web interfaces.<br>Scan a code for my CV, portfolio or LinkedIn.</p>
 
     <div class="qr-row">
       <button class="qr" aria-label="Open CV" onclick="zoom('assets/qr-open-cv.jpg','Open CV')">

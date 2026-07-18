@@ -27,7 +27,7 @@
     --gap:clamp(11px, 2.4vh, 22px);
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html,body{height:100%}
+  html{height:100%}
   body{
     background:var(--bg);
     color:var(--text);
@@ -40,7 +40,7 @@
     align-items:center;
     justify-content:center;
     padding:max(16px,env(safe-area-inset-top)) 14px max(16px,env(safe-area-inset-bottom));
-    overflow:hidden;
+    overflow-x:hidden;
     position:relative;
   }
   body::before,body::after{
@@ -61,7 +61,7 @@
 
   .avatar{
     position:relative;
-    width:clamp(72px,13vh,116px);height:clamp(72px,13vh,116px);border-radius:50%;
+    width:clamp(84px,15.5vh,132px);height:clamp(84px,15.5vh,132px);border-radius:50%;
     padding:3px;
     background:linear-gradient(135deg,var(--accent-a),var(--accent-b),var(--accent-c));
     box-shadow:0 0 0 6px rgba(124,92,255,.10),0 18px 45px rgba(0,0,0,.55);
