@@ -96,7 +96,8 @@
     animation:rise .7s .16s both;
   }
   .bio{
-    max-width:34ch;
+    max-width:30ch;
+    text-wrap:pretty;text-wrap:balance;
     font-size:clamp(13px,1.9vh,15px);line-height:1.5;color:var(--muted);
     animation:rise .7s .2s both;
   }
@@ -173,7 +174,7 @@
     </div>
 
     <!-- EDIT: two lines about yourself -->
-    <p class="bio">Frontend developer building fast, polished web interfaces.<br>Scan a code for my CV, portfolio or LinkedIn.</p>
+    <p class="bio">Building things for the web, from first idea to a finished product.</p>
 
     <div class="qr-row">
       <button class="qr" aria-label="Open CV" onclick="zoom('assets/qr-open-cv.jpg','Open CV')">
