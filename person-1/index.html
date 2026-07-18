@@ -9,7 +9,7 @@
   EDIT HERE — Person 1 (portfolio + full CV)
   1. Drop your photo at: assets/photo.jpg  (square works best)
   2. Change NAME, ROLE and the two BIO lines below (search "EDIT").
-  3. QR images already in place: Open CV / Download CV / Portfolio.
+  3. QR images already in place: Open CV / LinkedIn / Portfolio.
   ============================================================
 -->
 <title>Your Name — Say hi 👋</title>
@@ -79,7 +79,7 @@
     color:rgba(255,255,255,.85);
     background:radial-gradient(circle at 30% 25%,#2a2a3d,#101018);
   }
-  .avatar img{position:relative;z-index:1}
+  .avatar img{position:relative;z-index:1;object-position:center 28%}
   .avatar img.missing{display:none}
 
   /* identity */
@@ -169,14 +169,14 @@
     </div>
 
     <!-- EDIT: two lines about yourself -->
-    <p class="bio">Designing clean, human-centered products.<br>Scan a code to grab my CV or portfolio.</p>
+    <p class="bio">Designing clean, human-centered products.<br>Scan a code for my CV, portfolio or LinkedIn.</p>
 
     <div class="qr-row">
       <button class="qr" aria-label="Open CV" onclick="zoom('assets/qr-open-cv.jpg','Open CV')">
         <img src="assets/qr-open-cv.jpg" alt="Open CV QR code">
       </button>
-      <button class="qr" aria-label="Download CV" onclick="zoom('assets/qr-download-cv.jpg','Download CV')">
-        <img src="assets/qr-download-cv.jpg" alt="Download CV QR code">
+      <button class="qr" aria-label="LinkedIn" onclick="zoom('assets/qr-linkedin.jpg','LinkedIn')">
+        <img src="assets/qr-linkedin.jpg" alt="LinkedIn QR code">
       </button>
       <button class="qr" aria-label="Portfolio website" onclick="zoom('assets/qr-portfolio.jpg','Portfolio website')">
         <img src="assets/qr-portfolio.jpg" alt="Portfolio website QR code">
